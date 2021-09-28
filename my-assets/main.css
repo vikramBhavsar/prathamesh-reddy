@@ -1,5 +1,7 @@
 * {
   font-family: "Oswald", sans-serif;
+  color: #353535;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -10,7 +12,6 @@ h1 {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 .navbar {
