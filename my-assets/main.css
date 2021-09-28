@@ -3,6 +3,7 @@
 }
 
 h1 {
+  font-weight: normal;
   font-size: 5rem;
   margin: 0.5rem 1rem;
 }
@@ -18,14 +19,14 @@ a {
   align-items: center;
 }
 .navbar ul {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  justify-content: space-evenly;
   list-style: none;
 }
 .navbar ul li {
   display: inline-block;
-  margin-right: 2rem;
   font-size: 2rem;
 }
 
@@ -38,15 +39,36 @@ main .container .grid-system {
   gap: 20px;
 }
 main .container .grid-system .grid-item {
+  font-size: 1.3rem;
   margin-bottom: 2rem;
 }
 main .container .grid-system .grid-item img {
   width: 100%;
   object-fit: cover;
 }
+main .container .grid-system .grid-item .about-img {
+  width: 80%;
+}
+main .container .grid-system-contact {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding: 1rem;
+}
+main .container .grid-system-contact .grid-item {
+  font-size: 1.5rem;
+}
+main .container .grid-system-contact .grid-item i {
+  font-size: 2rem;
+}
+
+.text-hover:hover {
+  opacity: 0.8;
+}
 
 @media (max-width: 768px) {
-  main .container .grid-system {
+  main .container .grid-system, main .container .grid-system-contact {
     grid-template-columns: repeat(1, 1fr);
   }
 }
