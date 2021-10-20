@@ -36,7 +36,7 @@ main {
 }
 main .container .grid-system {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 main .container .grid-system .grid-item {
@@ -45,7 +45,7 @@ main .container .grid-system .grid-item {
   text-align: center;
 }
 main .container .grid-system .grid-item img {
-  width: 100%;
+  width: 50%;
   object-fit: cover;
 }
 main .container .grid-system .grid-item .about-img {

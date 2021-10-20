@@ -50,15 +50,17 @@ main{
 
         .grid-system{
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+
             gap: 10px;
 
             .grid-item{
                 font-size: 1.3rem;
                 margin-bottom: 2rem;
                 text-align: center;
+                
                 img{
-                    width: 100%;
+                    width: 50%;
                     // height: 30rem;
                     object-fit: cover;
                 }
