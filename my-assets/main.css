@@ -69,7 +69,17 @@ main .container .grid-system-contact .grid-item i {
   opacity: 0.8;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+  
+  main {
+    padding: 1rem 0rem;
+  }
+  main .container .grid-system {
+    gap: 5px;
+  }
+  main .container .grid-system .grid-item .about-img {
+    width: 100%;
+  }
   main .container .grid-system, main .container .grid-system-contact {
     grid-template-columns: repeat(1, 1fr);
   }

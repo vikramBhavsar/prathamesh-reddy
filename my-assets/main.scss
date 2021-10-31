@@ -98,8 +98,26 @@ main{
 
 @media(max-width: 768px) {
 
+    *{
+        display: none;
+    }
+
     main{
+    padding: 1rem 0rem;
+
         .container{
+
+            .grid-system{
+                gap: 5px;
+
+                .grid-item{
+                    .about-img{
+                        width: 100%;
+                        // height: 90vh;
+                    }
+                }
+            }
+
             .grid-system,.grid-system-contact{
                 grid-template-columns: repeat(1, 1fr);
             }
